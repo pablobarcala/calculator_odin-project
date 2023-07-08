@@ -25,12 +25,14 @@ function numberPressed(id) {
     if(active.textContent === '' || shoulResetScreen){
         resetScreen();
     }
-    if(result !== "") {
-        active.textContent = '';
-        active.textContent += id;
-    } else {
-        active.textContent += id;
-    }
+    // if(result !== "") {
+    //     active.textContent = '';
+    //     active.textContent += id;
+    // } else {
+    //     active.textContent += id;
+    // }
+
+    active.textContent += id;
 }
 
 function resetScreen() {
