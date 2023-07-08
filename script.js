@@ -25,7 +25,12 @@ function numberPressed(id) {
     if(active.textContent === '' || shoulResetScreen){
         resetScreen();
     }
-    active.textContent += id;
+    if(result !== "") {
+        active.textContent = '';
+        active.textContent += id;
+    } else {
+        active.textContent += id;
+    }
 }
 
 function resetScreen() {
