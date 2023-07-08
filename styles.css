@@ -2,6 +2,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.container {
+    border: 2px solid #000;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
 .display {
     background-color: rgb(214, 214, 214);
     width: 300px;
@@ -54,6 +67,7 @@
     display: grid;
     width: 300px;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 button {
@@ -61,15 +75,16 @@ button {
 }
 
 .equal_btn,
-.number_btn {
+.number_btn,
+.clear_btn {
     font-size: 2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .number_btn {
@@ -87,4 +102,12 @@ button {
 
 .equal_btn:hover {
     background-color: rgba(84, 119, 150, 0.7);
+}
+
+.clear_btn {
+    background-color: rgb(211, 209, 108);
+}
+
+.clear_btn:hover {
+    background-color: rgb(211, 209, 108, 0.7);
 }
